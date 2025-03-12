@@ -1,13 +1,13 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.1.0
  */
 
-$lang['Leave Management System'] = 'Gestion des demandes de congé';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Gestion des demandes de congé';
 $lang['global_link_tooltip_documentation'] = 'Lien vers la documentation';
 $lang['global_msg_error_forbidden'] = 'L\'opération (%s) n\'est pas autorisée';
 $lang['global_msg_wait'] = 'Veuillez patienter';

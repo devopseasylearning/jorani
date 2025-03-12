@@ -10,7 +10,7 @@ class RestTest extends TestCase
     /**
      * Create a common HTTP client for all test cases pointing to 
      * the API URL defined as environment variable (or by phpunit.xml)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function setUp()
     {
@@ -21,7 +21,7 @@ class RestTest extends TestCase
 
     /**
      * Free resources after this test case
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function tearDown() {
         $this->httpClient = null;
@@ -32,11 +32,11 @@ class RestTest extends TestCase
      * It should be inerited from MY_RestController::options
      * But relying of what is set into the parent's constructor
      * @covers Rest::options
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testPreflightCORS()
     {
-        $response = $this->httpClient->request('OPTIONS', 'config', ['auth' => ['bbalet', 'bbalet']]);
+        $response = $this->httpClient->request('OPTIONS', 'config', ['auth' => ['bTechnology', 'bTechnology']]);
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Origin'));
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Methods'));
@@ -52,7 +52,7 @@ class RestTest extends TestCase
     public function testGetConfig()
     {
         $response = $this->httpClient->request('GET', 'config', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));
@@ -78,7 +78,7 @@ class RestTest extends TestCase
     public function testGetSelf()
     {
         $response = $this->httpClient->request('GET', 'self', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));
@@ -103,7 +103,7 @@ class RestTest extends TestCase
     public function testGetProfile()
     {
         $response = $this->httpClient->request('GET', 'profile', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));
@@ -120,7 +120,7 @@ class RestTest extends TestCase
     public function testGetSubmissions()
     {
         $response = $this->httpClient->request('GET', 'submissions', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));
@@ -140,7 +140,7 @@ class RestTest extends TestCase
     {
         //Get checksum of all tables
         $response = $this->httpClient->request('GET', 'checksum', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));
@@ -167,7 +167,7 @@ class RestTest extends TestCase
 
         //Get checksum of the leave requests table only
         $response = $this->httpClient->request('GET', 'checksum/leaves', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
         ]);
         $this->assertEquals(200, $response->getStatusCode());
         $data = json_decode($response->getBody(true));

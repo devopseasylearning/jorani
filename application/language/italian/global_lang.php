@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.1.0
  * @author       dario brignone <brignone@unitec.it>
  */
 
-$lang['Leave Management System'] = 'Gestire Richieste di Ferie';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Gestire Richieste di Ferie';
 $lang['global_link_tooltip_documentation'] = 'Documentazione';
 $lang['global_msg_error_forbidden'] = 'L\'operazione (%s) non è garantita';
 $lang['global_msg_wait'] = 'Attendere prego';

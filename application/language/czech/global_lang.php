@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.6.0
  * @author     Transifex contributors
  */
 
-$lang['Leave Management System'] = 'Opustit Managment Systém';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Opustit Managment Systém';
 $lang['global_link_tooltip_documentation'] = 'Odkaz k dokumentaci';
 $lang['global_msg_error_forbidden'] = 'Operace (%s) není udělena';
 $lang['global_msg_wait'] = 'Čekejte prosím';

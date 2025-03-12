@@ -753,7 +753,7 @@ msgstr "Vissza a listához"
 msgid "List of overtime worked"
 msgstr "Ledolgozott túlórák listája"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Szabadság Kezelő Rendszer"
 
 msgid "Link to documentation"

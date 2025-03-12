@@ -1,9 +1,9 @@
 <?php
 /**
  * This view is included into all desktop full views. It contains the footer of the application.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.1.0
  */
 ?>
@@ -21,7 +21,7 @@
                   case 'fr' : echo '<a class="anchor" href="https://fr.jorani.org/" target="_blank">Jorani</a>'; break;
                   default : echo '<a class="anchor" href="https://jorani.org/" target="_blank">Jorani</a>'; break;
               } ?>
-          &nbsp;v<?php echo $GLOBALS['versionOfJorani'];?>&nbsp;&copy;2014-2019 Benjamin BALET
+          &nbsp;v<?php echo $GLOBALS['versionOfJorani'];?>&nbsp;&copy;2014-2019 Webforx Technology
         </div>
     </div>
     </div>

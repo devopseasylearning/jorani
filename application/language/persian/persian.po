@@ -973,7 +973,7 @@ msgstr "شما نمیتوانید یک نوع مرخصی سیستمی را حذ�
 msgid "You cannot delete a leave type that is used."
 msgstr "شما نمیتوانید یک نوع مرخصی را که هم اکنون در حال استفاده است را حذف نمایید."
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "سیستم مدیریت مرخصی"
 
 msgid "Change password"

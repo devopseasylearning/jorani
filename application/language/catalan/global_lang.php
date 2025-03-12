@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.6.6
  * @author     Transifex users
  */
 
-$lang['Leave Management System'] = 'Sistema de Gestió d\'Absències';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Sistema de Gestió d\'Absències';
 $lang['global_link_tooltip_documentation'] = 'Enllaç a la documentació';
 $lang['global_msg_error_forbidden'] = 'Operació (%s) no acceptada';
 $lang['global_msg_wait'] = 'Si us plau espera';

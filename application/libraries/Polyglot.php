@@ -1,9 +1,9 @@
 <?php
 /**
  * This library helps to deal with language codes, english language names and local names
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.2.0
  */
 
@@ -25,7 +25,7 @@ class Polyglot {
      * You can pass the config object $this->config->item('languages') as a parameter
      * @param string $languages_list comma separated list of language codes
      * @return array associative array (language code => english language name)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function languages($languages_list) {
         $languages = array();
@@ -41,7 +41,7 @@ class Polyglot {
      * You can pass the config object $this->config->item('languages') as a parameter
      * @param string $languages_list comma separated list of language codes
      * @return array associative array (language code => language native name)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function nativelanguages($languages_list) {
         $languages = array();
@@ -56,7 +56,7 @@ class Polyglot {
      * Convert a two characters language code to the english language name
      * @param string $code ISO 639-1 language code
      * @return string english language name
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function code2language($code) {
         switch (strtolower($code)) {
@@ -252,7 +252,7 @@ class Polyglot {
      * Returns the ISO 639-1 language code of an english language name
      * @param string $code english language name
      * @return string ISO 639-1 language code
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function language2code($language) {
         switch (strtolower($language)) {
@@ -447,7 +447,7 @@ class Polyglot {
      * Convert a two characters language code to the language native name
      * @param string $code ISO 639-1 language code
      * @return string language native name
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function code2nativelanguage($code) {
         switch (strtolower($code)) {
@@ -643,7 +643,7 @@ class Polyglot {
      * Returns the ISO 639-1 language code of a language native name
      * @param string language native name
      * @return string $code ISO 639-1 language code
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function nativelanguage2code($language) {
         switch (strtolower($language)) {

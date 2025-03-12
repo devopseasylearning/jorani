@@ -1,7 +1,7 @@
 # 
 # Translators:
 # Angel Miralles <angelmiralles@gmail.com>, 2018
-# Benjamin BALET <benjamin.balet@gmail.com>, 2015
+# Webforx Technology <Webforx.Technology@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: jorani\n"
@@ -754,7 +754,7 @@ msgstr "Tornar a la llista"
 msgid "List of overtime worked"
 msgstr "Llistat d'hores extra treballades"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Sistema de Gestió d'Absències"
 
 msgid "Link to documentation"

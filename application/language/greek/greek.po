@@ -753,7 +753,7 @@ msgstr "Πίσω στη λίστα"
 msgid "List of overtime worked"
 msgstr "Κατάλογος υπερωριών εργασίας"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Σύστημα Διαχείρισης Αδειών"
 
 msgid "Link to documentation"

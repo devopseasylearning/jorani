@@ -1,12 +1,12 @@
 {
     "name": "jorani/jorani",
-    "description": "A free and Open Source Leave Management System",
+    "description": "A free and Open Source WEBFORX TECHNOLOGY Leave Management System",
     "type": "project",
     "license": "AGPLv3",
     "authors": [
         {
-            "name": "Benjamin Balet",
-            "email": "benjamin.balet@gmail.com"
+            "name": "Webforx Technology",
+            "email": "Webforx.Technology@gmail.com"
         }
     ],
     "minimum-stability": "stable",

@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license     http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link          https://github.com/bbalet/jorani
+ * @link          https://github.com/bTechnology/jorani
  * @since       0.4.7
  * @author      Ceibga Bao <info@sansin.com.tw>
  */
 
-$lang['Leave Management System'] = '離開管理系統';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = '離開管理系統';
 $lang['global_link_tooltip_documentation'] = '連結至紀錄';
 $lang['global_msg_error_forbidden'] = '運行（%s）不被允許';
 $lang['global_msg_wait'] = '請稍等';

@@ -1,9 +1,9 @@
 <?php
 /**
  * This controller serves the user management pages and tools.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.4.2
  */
 
@@ -17,7 +17,7 @@ class Users extends CI_Controller {
 
     /**
      * Default constructor
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function __construct() {
         parent::__construct();
@@ -28,7 +28,7 @@ class Users extends CI_Controller {
 
     /**
      * Display the list of all users
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function index() {
         $this->auth->checkIfOperationIsAllowed('list_users');
@@ -48,7 +48,7 @@ class Users extends CI_Controller {
     /**
      * Account management (activate/disable/delete) is done by a 
      * POST request with a CSRF token for an improved security
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function account() {
         $this->auth->checkIfOperationIsAllowed('list_users');
@@ -78,7 +78,7 @@ class Users extends CI_Controller {
 
     /**
      * Display the modal pop-up content of the list of employees
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function employees() {
         $this->auth->checkIfOperationIsAllowed('employees_list');
@@ -95,7 +95,7 @@ class Users extends CI_Controller {
      * allowed and the last column contains the name of the entity the employee
      * belongs to.
      * @see employees
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function employeesMultiSelect() {
         $this->auth->checkIfOperationIsAllowed('employees_list');
@@ -108,7 +108,7 @@ class Users extends CI_Controller {
 
     /**
      * Display details of the connected user (contract, line manager, etc.)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function myProfile() {
         $this->auth->checkIfOperationIsAllowed('view_myprofile');
@@ -138,7 +138,7 @@ class Users extends CI_Controller {
     /**
      * Display a for that allows updating a given user
      * @param int $id User identifier
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function edit($id) {
         $this->auth->checkIfOperationIsAllowed('edit_user');
@@ -198,7 +198,7 @@ class Users extends CI_Controller {
      * Reset the password of a user
      * Can be accessed by the user itself or by admin
      * @param int $id User identifier
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function reset($id) {
         $this->auth->checkIfOperationIsAllowed('change_password', $id);
@@ -267,7 +267,7 @@ class Users extends CI_Controller {
 
     /**
      * Display the form / action Create a new user
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function create() {
         $this->auth->checkIfOperationIsAllowed('create_user');
@@ -351,7 +351,7 @@ class Users extends CI_Controller {
      * Form validation callback : prevent from login duplication
      * @param string $login Login
      * @return boolean TRUE if the field is valid, FALSE otherwise
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function checkLogin($login) {
         if (!$this->users_model->isLoginAvailable($login)) {
@@ -364,7 +364,7 @@ class Users extends CI_Controller {
 
     /**
      * Ajax endpoint : check login duplication
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function checkLoginByAjax() {
         $this->output->set_content_type('text/plain');
@@ -377,7 +377,7 @@ class Users extends CI_Controller {
 
     /**
      * Action: export the list of all users into an Excel file
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function export() {
         $this->auth->checkIfOperationIsAllowed('export_user');

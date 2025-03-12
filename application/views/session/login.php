@@ -1,9 +1,9 @@
 <?php
 /**
  * This view displays the login form. Its layout differs from other pages of the application.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.1.0
  */
 ?>
@@ -80,12 +80,12 @@ $languages = $this->polyglot->nativelanguages($this->config->item('languages'));
     <br />
     <?php } ?>
     <label for="login"><?php echo lang('session_login_field_login');?></label>
-    <input type="text" class="input-medium" name="login" id="login" value="<?php echo (ENVIRONMENT=='demo')?'bbalet':set_value('login'); ?>" required />
+    <input type="text" class="input-medium" name="login" id="login" value="<?php echo (ENVIRONMENT=='demo')?'bTechnology':set_value('login'); ?>" required />
     <input type="hidden" name="CipheredValue" id="CipheredValue" />
 </form>
     <input type="hidden" name="salt" id="salt" value="<?php echo $salt; ?>" />
     <label for="password"><?php echo lang('session_login_field_password');?></label>
-    <input class="input-medium" type="password" name="password" id="password" value="<?php echo (ENVIRONMENT=='demo')?'bbalet':''; ?>" /><br />
+    <input class="input-medium" type="password" name="password" id="password" value="<?php echo (ENVIRONMENT=='demo')?'bTechnology':''; ?>" /><br />
     <br />
     <button id="send" class="btn btn-primary"><i class="mdi mdi-login"></i>&nbsp;<?php echo lang('session_login_button_login');?></button>
     <?php if ($this->config->item('oauth2_enabled') == TRUE) { ?>
@@ -109,7 +109,7 @@ $languages = $this->polyglot->nativelanguages($this->config->item('languages'));
                     <div class="row-fluid"><div class="span12">&nbsp;</div></div>
                     <div class="row-fluid">
                         <div class="span12">
-                            <span style="font-size: 250%; font-weight: bold; line-height: 100%;"><center><?php echo lang('Leave Management System');?></center></span>
+                            <span style="font-size: 250%; font-weight: bold; line-height: 100%;"><center><?php echo lang('WEBFORX TECHNOLOGY Leave Management System');?></center></span>
                         </div>
                     </div>
                 </div>

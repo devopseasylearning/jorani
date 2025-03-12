@@ -1,9 +1,9 @@
 <?php
 /**
  * This class manages the authorization to access to pages.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.1.0
  */
 
@@ -59,7 +59,7 @@ class Auth {
      * @param string $operation Operation attempted by the user
      * @param int $id  optional object identifier of the operation (e.g. user id)
      * @return bool true if the user is granted, false otherwise
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function isAllowed($operation, $object_id = 0) {
         switch ($operation) {
@@ -251,7 +251,7 @@ class Auth {
      * @param string $operation Operation attempted by the user
      * @param int $id  optional object identifier of the operation (e.g. user id)
      * @return bool true if the user is granted, false otherwise
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function checkIfOperationIsAllowed($operation, $object_id = 0) {
         if (!$this->isAllowed($operation, $object_id)) {

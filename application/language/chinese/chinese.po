@@ -665,7 +665,7 @@ msgstr "返回列表"
 msgid "List of overtime worked"
 msgstr "加班列表"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "離開管理系統"
 
 msgid "Link to documentation"

@@ -1,6 +1,6 @@
 # 
 # Translators:
-# Benjamin BALET <benjamin.balet@gmail.com>, 2015
+# Webforx Technology <Webforx.Technology@gmail.com>, 2015
 # oleg koptev <koptev.oleg@gmail.com>, 2015
 # oleg koptev <koptev.oleg@gmail.com>, 2015
 # Yevhen Kyrylchenko <yevhen.kyrylchenko@gmail.com>, 2015
@@ -976,7 +976,7 @@ msgstr "Вы не можете удалить системный тип отпу
 msgid "You cannot delete a leave type that is used."
 msgstr "Вы не можете удалить тип отпуска, который используется в системе."
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Система управления отпусками"
 
 msgid "Change password"

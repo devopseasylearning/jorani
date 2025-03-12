@@ -5,7 +5,7 @@
 //If you want to overload the default homepage, simply rename this page "home.php"
 //Don't forget to create a page for all the locales you are using into your company
 ?>
-<h2><?php echo lang('Leave Management System');?></h2>
+<h2><?php echo lang('WEBFORX TECHNOLOGY Leave Management System');?></h2>
 
 <p>This page is a sample.</p>
 

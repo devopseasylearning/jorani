@@ -753,7 +753,7 @@ msgstr "Terug naar overzicht"
 msgid "List of overtime worked"
 msgstr "Lijst van gewerkte overuren"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Afwezigheid Management Systeem"
 
 msgid "Link to documentation"

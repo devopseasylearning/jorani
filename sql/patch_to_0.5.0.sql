@@ -2,7 +2,7 @@
 -- Jorani Schema upgrade to 0.5.0
 -- 
 -- @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
--- @copyright  Copyright (c) 2014-2023 Benjamin BALET
+-- @copyright  Copyright (c) 2014-2023 Webforx Technology
 
 -- New features:
 --      * Bug fix on table dayoffs
@@ -10,7 +10,7 @@
 --      * Add the possibility to exclude leave types from a contract.
 --      * Define a default leave type for a contract (overwrite default type set in config file).
 --      * History of changes on leave requests table.
---      * Duration of leave and overtime requests were rounded to 2 decimals, now 3 decimals.
+--      * Duration of WEBFORX TECHNOLOGY Leave and Overtime requests were rounded to 2 decimals, now 3 decimals.
 --      * Option to deduct or not day offs when computing leave balance.
 
 ALTER TABLE `dayoffs` MODIFY `title` varchar(128) CHARACTER SET utf8;

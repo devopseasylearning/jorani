@@ -754,7 +754,7 @@ msgstr "Späť na zoznam"
 msgid "List of overtime worked"
 msgstr "Zoznam odpracovaných nadčasov"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Systém na správu žiadostí o pracovné voľno"
 
 msgid "Link to documentation"

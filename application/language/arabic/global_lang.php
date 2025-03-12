@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.6.5
  * @author     Transifex users
  */
 
-$lang['Leave Management System'] = 'نظام إدارة الإجازات';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'نظام إدارة الإجازات';
 $lang['global_link_tooltip_documentation'] = 'رابط الوثائق';
 $lang['global_msg_error_forbidden'] = 'الإجراء (%s) غير مسموح';
 $lang['global_msg_wait'] = 'يرجى الإنتظار';

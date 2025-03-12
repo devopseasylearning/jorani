@@ -11,4 +11,4 @@ The following versions of Jorani are currently being supported with security upd
 
 ## Reporting a Vulnerability
 
-Please contact benjamin.balet@gmail.com
+Please contact Webforx.Technology@gmail.com

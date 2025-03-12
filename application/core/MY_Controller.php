@@ -1,9 +1,9 @@
 <?php
 /**
  * Customized controller for REST API
- * @copyright Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright Copyright (c) 2014-2023 Webforx Technology
  * @license   http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link      https://github.com/bbalet/jorani
+ * @link      https://github.com/bTechnology/jorani
  * @since     0.4.3
  */
 
@@ -26,7 +26,7 @@ class MY_RestController extends CI_Controller {
     /**
      * Default constructor
      * Check user credentials
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function __construct()
     {
@@ -129,7 +129,7 @@ class MY_RestController extends CI_Controller {
      * @param array $availableLanguages list of languages supported by Jorani
      * @param string $httpAcceptLanguage HTTP Request Header (accept-language)
      * @return array associative array langCode/Score (eg. [en] => 0.8, [es] => 0.4)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     private function preferedLanguages($availableLanguages, $httpAcceptLanguage) {
         $availableLanguages = array_flip($availableLanguages);
@@ -156,7 +156,7 @@ class MY_RestController extends CI_Controller {
 
     /**
      * Pre-flight check for CORS requests
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function options() {
         log_message('debug', '__options');

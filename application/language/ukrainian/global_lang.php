@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright Copyright (c) 2014-2015 Benjamin BALET
+ * @copyright Copyright (c) 2014-2015 Webforx Technology
  * @license     http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link           https://github.com/bbalet/jorani
+ * @link           https://github.com/bTechnology/jorani
  * @since        0.4.4
  * @author      Yevhen Kyrylchenko
  */
 
-$lang['Leave Management System'] = 'Система управління відпустками';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Система управління відпустками';
 $lang['global_link_tooltip_documentation'] = 'Посилання на документацію';
 $lang['global_msg_error_forbidden'] = 'Операція (%s) не дозволена';
 $lang['global_msg_wait'] = 'Зачекайте';

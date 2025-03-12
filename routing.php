@@ -4,9 +4,9 @@
  * This is for a quick test of the application. You still need a MySQL DB.
  * From the root of this repository, launch:
  * php -S localhost:8888 routing.php
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license    http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link       https://github.com/bbalet/jorani
+ * @link       https://github.com/bTechnology/jorani
  * @since      0.5.0
  */
 

@@ -1,10 +1,10 @@
 {
   "name": "jorani",
   "version": "1.0.0",
-  "description": "Jorani is a free and open source leave management system",
+  "description": "Jorani is a free and open source WEBFORX TECHNOLOGY Leave Management System",
   "main": "index.js",
-  "repository": "https://github.com/bbalet/jorani.git",
-  "author": "bbalet <benjamin.balet@gmail.com>",
+  "repository": "https://github.com/bTechnology/jorani.git",
+  "author": "bTechnology <Webforx.Technology@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "@mdi/font": "^5.7.55",

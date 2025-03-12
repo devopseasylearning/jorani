@@ -1,9 +1,9 @@
 <?php
 /**
  * This controller manages the connection to the application
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.1.0
  */
 
@@ -18,7 +18,7 @@ class Connection extends CI_Controller {
 
     /**
      * Default constructor
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function __construct() {
         parent::__construct();
@@ -42,7 +42,7 @@ class Connection extends CI_Controller {
      * Generate a random string by using openssl, dev/urandom or random
      * @param int $length optional length of the string
      * @return string random string
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     private function generateRandomString($length = 10) {
         if(function_exists('openssl_random_pseudo_bytes')) {
@@ -71,7 +71,7 @@ class Connection extends CI_Controller {
     
     /**
      * Login form
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function login() {
         //The login form is not used with SAML2 authentication mode
@@ -180,7 +180,7 @@ class Connection extends CI_Controller {
 
     /**
      * Logout the user and destroy the session data
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function logout() {
         $this->session->sess_destroy();
@@ -189,7 +189,7 @@ class Connection extends CI_Controller {
 
     /**
      * Change the language and redirect to last page (i.e. page that submit the language form)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function language() {
         $this->load->helper('form');
@@ -211,7 +211,7 @@ class Connection extends CI_Controller {
     /**
      * If the user has a target page (e.g. link in an e-mail), redirect to this destination
      * @param string $page Force the redirection to a given page
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     private function redirectToLastPage($page = "") {
         if ($page!=="") {
@@ -236,7 +236,7 @@ class Connection extends CI_Controller {
      * Ajax : Send the password by e-mail to a user requesting it
      * POST: string login Login of the user
      * RETURN: UNKNOWN if the login was not found, OK otherwise
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function forgetpassword() {
         $this->output->set_content_type('text/plain');
@@ -276,7 +276,7 @@ class Connection extends CI_Controller {
     
     /**
      * Try to authenticate the user using one of the OAuth2 providers
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function loginOAuth2() {
         $oauth2Enabled = $this->config->item('oauth2_enabled');
@@ -325,7 +325,7 @@ class Connection extends CI_Controller {
 
     /**
      * Returns the metadata needed for SAML2 Authentication
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function metadata() {
         require_once APPPATH . 'config/saml.php';
@@ -345,7 +345,7 @@ class Connection extends CI_Controller {
     
     /**
      * SAML2 SSO endpoint that starts the login via SSO
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function sso() {
         require_once APPPATH . 'config/saml.php';
@@ -357,7 +357,7 @@ class Connection extends CI_Controller {
      * SAML2 Logout endpoint that perfom the logout
      * This feature is not supported by all IdP (eg. Google)
      * That why a message might appear to explain that you are not logged from the IdP
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function slo() {
         require_once APPPATH . 'config/saml.php';
@@ -388,7 +388,7 @@ class Connection extends CI_Controller {
     
     /**
      * SAML2 sls endpoint
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function sls() {
         require_once APPPATH . 'config/saml.php';
@@ -410,7 +410,7 @@ class Connection extends CI_Controller {
 
     /**
      * SAML2 acs endpoint. Called by the IdP to perform the connection
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function acs() {
         require_once APPPATH . 'config/saml.php';

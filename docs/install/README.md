@@ -8,7 +8,7 @@ Jorani is 100% compatible with PHP 7.0 (starting from v0.4.0).
 
 * Jorani must have write privileges on <code>application/logs</code> and <code>local/upload/*</code> folders.
 * Some PHP extensions are required (e.g. mcrypt, mysqli, xml, zip, gd). 
-* The default user is *bbalet* and password is *bbalet*.
+* The default user is *bTechnology* and password is *bTechnology*.
 * The script <code>requirements.php</code>, at the root of the installation (e.g. *http://localhost/jorani/requirements.php*) allows you to check your system.
 * Change <code>application/config/config.php</code> in order to modify the default behavior of Jorani.
 * Jorani uses MySQL procedures (PROCEDURE). Some web hosting companies don't allow using custom MySQL functions.
@@ -62,7 +62,7 @@ Since version 0.1.5, Jorani supports complex LDAP authentication schemes (where 
 
 1. Set <code>ldap_basedn_db</code> to TRUE.
 2. The Base DN is not based on <code>ldap_basedn</code>, but read from the users table, column <code>ldap_path</code> (e.g. from database).
-3. The Base DN should look like <code>uid=bbalet,ou=people,dc=company,dc=com</code>. Note that this feature allows you to authenticate users from different OU.
+3. The Base DN should look like <code>uid=bTechnology,ou=people,dc=company,dc=com</code>. Note that this feature allows you to authenticate users from different OU.
 
 ## SSO/OAuth2 with Google+
 

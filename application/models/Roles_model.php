@@ -1,9 +1,9 @@
 <?php
 /**
  * This Class contains all the business logic and the persistence layer for the roles.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.1.0
  */
 
@@ -36,7 +36,7 @@ class Roles_model extends CI_Model {
      * Get the list of roles or one role
      * @param int $id optional id of one role
      * @return array record of roles
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function getRoles($id = 0) {
         if ($id === 0) {

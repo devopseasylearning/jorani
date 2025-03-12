@@ -10,7 +10,7 @@ class RestRequestsTest extends TestCase
     /**
      * Create a common HTTP client for all test cases pointing to 
      * the API URL defined as environment variable (or by phpunit.xml)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function setUp()
     {
@@ -21,7 +21,7 @@ class RestRequestsTest extends TestCase
 
     /**
      * Free resources after this test case
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function tearDown() {
         $this->httpClient = null;
@@ -32,11 +32,11 @@ class RestRequestsTest extends TestCase
      * It should be inerited from MY_RestController::options
      * But relying of what is set into the parent's constructor
      * @covers RestRequests::options
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testPreflightCORS()
     {
-        $response = $this->httpClient->request('OPTIONS', 'requests', ['auth' => ['bbalet', 'bbalet']]);
+        $response = $this->httpClient->request('OPTIONS', 'requests', ['auth' => ['bTechnology', 'bTechnology']]);
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Origin'));
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Methods'));
@@ -46,9 +46,9 @@ class RestRequestsTest extends TestCase
     }
 
     /**
-     * Creates a leave request (jdoe to his manager bbalet)
+     * Creates a leave request (jdoe to his manager bTechnology)
      * @covers RestRequests::requests
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testCreateLeaveRequestForManager()
     {
@@ -97,7 +97,7 @@ class RestRequestsTest extends TestCase
     public function testListOfSubmittedLeaveRequests()
     {
         $response = $this->httpClient->request('GET', 'requests', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'headers' => [
                 'Accept-Language' => 'fr'
             ]

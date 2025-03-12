@@ -973,7 +973,7 @@ msgstr "Не можна видалити системний тип відпус�
 msgid "You cannot delete a leave type that is used."
 msgstr "Не можна видалити тип відпустки, що використовується."
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Система управління відпустками"
 
 msgid "Change password"

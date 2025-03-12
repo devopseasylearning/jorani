@@ -585,7 +585,7 @@ msgstr "Listeye geri dön"
 msgid "List of overtime worked"
 msgstr "Çalışılmış fazla mesailerin listesi"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "İzin Yönetim Sistemi"
 
 msgid "Link to documentation"

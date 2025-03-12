@@ -1,9 +1,9 @@
 <?php
 /**
  * This controller serves the administration pages
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.4.2
  */
 
@@ -17,7 +17,7 @@ class Admin extends CI_Controller {
     
     /**
      * Default constructor
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function __construct() {
         parent::__construct();
@@ -28,7 +28,7 @@ class Admin extends CI_Controller {
     
     /**
      * Display the settings of the system (extract of config.php)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function settings() {
         $this->auth->checkIfOperationIsAllowed('list_settings');
@@ -43,7 +43,7 @@ class Admin extends CI_Controller {
     
     /**
      * Display the diagnostic of the content (duplicated requests, etc.) and configuration
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function diagnostic() {
         $this->auth->checkIfOperationIsAllowed('diagnostic');
@@ -86,7 +86,7 @@ class Admin extends CI_Controller {
     
     /**
      * Display the list of OAuth clients
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function oauthClients() {
         $this->auth->checkIfOperationIsAllowed('oauth_clients');
@@ -105,7 +105,7 @@ class Admin extends CI_Controller {
 
     /**
      * Ajax action: create an OAuth clients
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function oauthClientsCreate() {
         if ($this->auth->isAllowed('oauth_clients') == FALSE) {
@@ -132,7 +132,7 @@ class Admin extends CI_Controller {
 
     /**
      * Ajax action: delete an OAuth client
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function oauthClientsDelete() {
         if ($this->auth->isAllowed('oauth_clients') == FALSE) {
@@ -154,7 +154,7 @@ class Admin extends CI_Controller {
     
     /**
      * purgeAccessTokens
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function oauthTokensPurge() {
         $this->auth->checkIfOperationIsAllowed('oauth_clients');

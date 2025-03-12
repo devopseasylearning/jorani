@@ -2,9 +2,9 @@
 /**
  * Utility script that converts PHP array i18n files to a PO file
  * This tool is used in order to retrieve a translation that was done from the source files.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.4.4
  */
 
@@ -37,8 +37,8 @@ foreach ($files as $file) {
 //Get prettier variable names, eg. :
 $target = $lang;
 unset($lang);
-//$source['Leave Management System'] = 'Leave Management System';
-//$target['Leave Management System'] = 'Gestion des demandes de congé';
+//$source['WEBFORX TECHNOLOGY Leave Management System'] = 'WEBFORX TECHNOLOGY Leave Management System';
+//$target['WEBFORX TECHNOLOGY Leave Management System'] = 'Gestion des demandes de congé';
 
 
 $strings = array(); //Array of unique strings

@@ -734,7 +734,7 @@ msgstr ""
 msgid "List of overtime worked"
 msgstr ""
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr ""
 
 msgid "Link to documentation"

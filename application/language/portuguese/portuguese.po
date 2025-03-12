@@ -753,7 +753,7 @@ msgstr "Regressar à lista"
 msgid "List of overtime worked"
 msgstr "Lista de horas extra de trabalho"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Sistema de Gestão de Férias"
 
 msgid "Link to documentation"

@@ -3,9 +3,9 @@
  * This diagnostic page helps you to check openssl setup and to generate a pair of keys.
  * Please note that the configuration is not exposed by this page and that the pair of keys
  * is calculated each time the page is reloaded.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.4.3
  */
 
@@ -98,7 +98,7 @@ $rsa = new \phpseclib\Crypt\RSA();
 echo "<tr><td>CRYPT_RSA_MODE</td><td>" . ((CRYPT_RSA_MODE==1)? 'MODE_INTERNAL' : 'MODE_OPENSSL')  . '</td></tr>';
 
 $rsa->setEncryptionMode(phpseclib\Crypt\RSA::ENCRYPTION_OAEP);
-$plaintext = 'Jorani is the best open source Leave Management System';
+$plaintext = 'Jorani is the best open source WEBFORX TECHNOLOGY Leave Management System';
 
 $rsa->loadKey($publicKey);
 $ciphertext = $rsa->encrypt($plaintext);

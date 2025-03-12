@@ -1,4 +1,4 @@
-<h1>Leave and Overtime Management System</h1>
+<h1>WEBFORX TECHNOLOGY Leave and Overtime Management System</h1>
 
 <p>Witamy w Jorani. Jeżeli jesteś pracownikiem, możesz teraz :</p>
 <ul>

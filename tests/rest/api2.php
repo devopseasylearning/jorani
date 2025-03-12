@@ -110,7 +110,7 @@ echo var_dump($result_str);*/
 //Update an employee
 /*$url = 'http://localhost/jorani/api/updateuser/195';
 $data = array('access_token' => $token,
-				'firstname' => 'Benjamin',
+				'firstname' => 'Webforx',
 				);
 $options = array(
     'http' => array(

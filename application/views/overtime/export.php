@@ -1,9 +1,9 @@
 <?php
 /**
  * This view builds a Spreadsheet file containing the list of overtime requests (that a manager must validate).
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.2.0
  */
 

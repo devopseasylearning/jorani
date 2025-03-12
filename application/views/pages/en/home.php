@@ -1,4 +1,4 @@
-<h1>Leave and Overtime Management System</h1>
+<h1>WEBFORX TECHNOLOGY Leave and Overtime Management System</h1>
 
 <p>Welcome to Jorani. Feel free to click on the online help icon for each screen (<i class="mdi mdi-help-circle-outline"></i>).
   This will give you access to the documentation of the feature you are using.</p>

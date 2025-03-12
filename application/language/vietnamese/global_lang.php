@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license     http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link          https://github.com/bbalet/jorani
+ * @link          https://github.com/bTechnology/jorani
  * @since       0.4.5
  * @author      See list on Transifex https://www.transifex.com/jorani/
  */
 
-$lang['Leave Management System'] = 'Hệ thống quản lý ngày nghỉ';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'Hệ thống quản lý ngày nghỉ';
 $lang['global_link_tooltip_documentation'] = 'Liên kết tài liệu';
 $lang['global_msg_error_forbidden'] = 'Hoạt động (%s) không được chấp thuận';
 $lang['global_msg_wait'] = 'Vui lòng đợi';

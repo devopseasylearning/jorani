@@ -1,7 +1,7 @@
 <?php
 //This is a sample page showing how to create a custom content
 ?>
-<h2><?php echo lang('Leave Management System');?></h2>
+<h2><?php echo lang('WEBFORX TECHNOLOGY Leave Management System');?></h2>
 
 <p>This page is the action page.</p>
 

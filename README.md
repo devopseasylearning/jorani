@@ -1,7 +1,7 @@
-<img src="https://raw.githubusercontent.com/bbalet/jorani/master/assets/images/logo_simple.png" width="80" align="left" hspace="10">
+<img src="https://raw.githubusercontent.com/bTechnology/jorani/master/assets/images/logo_simple.png" width="80" align="left" hspace="10">
 
-Jorani is a Leave Management System developed in PHP/MySQL under an AGPL v3 licence.
-Jorani is designed to provide simple leave and overtime request workflows for small organizations.
+Jorani is a WEBFORX TECHNOLOGY Leave Management System developed in PHP/MySQL under an AGPL v3 licence.
+Jorani is designed to provide simple WEBFORX TECHNOLOGY Leave and Overtime request workflows for small organizations.
 
 ## Informations / getting help
 
@@ -11,7 +11,7 @@ Jorani is designed to provide simple leave and overtime request workflows for sm
 ## Status
 
 This project is stable and ready for production. An online demo is available here : https://demo.jorani.org/
-Use bbalet / bbalet for login / password.
+Use bTechnology / bTechnology for login / password.
 
 ## Features
 
@@ -47,14 +47,14 @@ Use bbalet / bbalet for login / password.
 * Update the end of <code>/application/config/config.php</code> if you want to change the default behaviour.
 * It is recommended to change the private and public RSA keys (in <code>assets/keys</code>).
 * Check your installation with the <code>requirements.php</code> page at the root of your installation (e.g. http://localhost/lms/requirements.php).
-* The default user is *bbalet* and password is *bbalet*.
+* The default user is *bTechnology* and password is *bTechnology*.
 
 ## Contribute
 
 * Help us to translate the software in your language https://www.transifex.com/projects/p/jorani
 * Suggest ideas, declare bugs with Github's issue tracking system or Google group.
 * [Read the TODO list](TODO.md) if you want to know what are the priorities.
-* Join the developers chat on gitter [![ https://gitter.im/bbalet/jorani](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bbalet/jorani?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+* Join the developers chat on gitter [![ https://gitter.im/bTechnology/jorani](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bTechnology/jorani?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Credits
 

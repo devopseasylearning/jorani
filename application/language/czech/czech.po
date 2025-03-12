@@ -746,7 +746,7 @@ msgstr "Zpět na seznam"
 msgid "List of overtime worked"
 msgstr "Seznam odpracovaných přesčasů"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Opustit Managment Systém"
 
 msgid "Link to documentation"

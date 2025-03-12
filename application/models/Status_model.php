@@ -1,9 +1,9 @@
 <?php
 /**
  * This Class contains all the business logic and the persistence layer for the status of leave request.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.7.0
  */
 
@@ -51,7 +51,7 @@ class Status_model extends CI_Model {
     /**
      * Get the list of status as an ordered associative array
      * @return array Associative array of types (id, name)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function getStatusAsArray($id = 0) {
         $listOfTypes = array();

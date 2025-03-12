@@ -1,6 +1,6 @@
 # 
 # Translators:
-# Benjamin BALET <benjamin.balet@gmail.com>, 2015
+# Webforx Technology <Webforx.Technology@gmail.com>, 2015
 # Christian <areanod@gmail.com>, 2015
 # Hans Lamecker, 2015
 # JDHH83 <j83kiel@gmail.com>, 2016
@@ -757,7 +757,7 @@ msgstr "Zurück zur Liste"
 msgid "List of overtime worked"
 msgstr "Liste der gearbeiteten Überstunden"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Urlaubs-Management-System"
 
 msgid "Link to documentation"

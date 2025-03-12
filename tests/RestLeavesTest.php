@@ -9,7 +9,7 @@ class RestLeavesTest extends TestCase
     /**
      * Create a common HTTP client for all test cases pointing to 
      * the API URL defined as environment variable (or by phpunit.xml)
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function setUp()
     {
@@ -20,7 +20,7 @@ class RestLeavesTest extends TestCase
 
     /**
      * Free resources after this test case
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function tearDown() {
         $this->httpClient = null;
@@ -31,11 +31,11 @@ class RestLeavesTest extends TestCase
      * It should be inerited from MY_RestController::options
      * But relying of what is set into the parent's constructor
      * @covers RestLeaves::options
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testPreflightCORS()
     {
-        $response = $this->httpClient->request('OPTIONS', 'leaves', ['auth' => ['bbalet', 'bbalet']]);
+        $response = $this->httpClient->request('OPTIONS', 'leaves', ['auth' => ['bTechnology', 'bTechnology']]);
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Origin'));
         $this->assertTrue($response->hasHeader('Access-Control-Allow-Methods'));
@@ -47,13 +47,13 @@ class RestLeavesTest extends TestCase
     /**
      * Creates a leave request
      * @covers RestLeaves::create
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testCreateLeaveRequest()
     {
         $response = $this->httpClient->request('POST', 'leaves', 
         [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-07-21",
                   "enddate" => "2018-07-21",
@@ -76,12 +76,12 @@ class RestLeavesTest extends TestCase
      * We don't send the preferred language, 
      * so US English formatting should be returned
      * @depends testCreateLeaveRequest
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testViewLeaveRequest(int $leaveId)
     {
         $response = $this->httpClient->request('GET', 'leaves/' . $leaveId,
-         ['auth' => ['bbalet', 'bbalet']]
+         ['auth' => ['bTechnology', 'bTechnology']]
         );
         $this->assertEquals(200, $response->getStatusCode());
         $leave = json_decode($response->getBody(true), true);
@@ -103,7 +103,7 @@ class RestLeavesTest extends TestCase
     /**
      * A non admin user shouldn't be able to force the LR
      * status to something else than planned or requested
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testForceStatus()
     {
@@ -137,32 +137,32 @@ class RestLeavesTest extends TestCase
     /**
      * Delete a LR and then try to display it again
      * @depends testCreateLeaveRequest
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testDeleteLeaveRequests(int $leaveId)
     {
         $response = $this->httpClient->request('DELETE', 'leaves/' . $leaveId,
-         ['auth' => ['bbalet', 'bbalet']]
+         ['auth' => ['bTechnology', 'bTechnology']]
         );
         $this->assertEquals(200, $response->getStatusCode());
 
         //Try to get the deleted object
         $response = $this->httpClient->request('GET', 'leaves/' . $leaveId,
             [  'http_errors' => false,
-                'auth' => ['bbalet', 'bbalet']
+                'auth' => ['bTechnology', 'bTechnology']
             ]);
         $this->assertEquals(404, $response->getStatusCode());
     }
 
     /**
      * Employee (non admin) must not be able to see the LR of another employee
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testIllegalAccessToLeaveRequest()
     {
         $response = $this->httpClient->request('POST', 'leaves', 
         [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-07-21",
                   "enddate" => "2018-07-21",
@@ -187,7 +187,7 @@ class RestLeavesTest extends TestCase
 
     /**
      * Try to display a LR that doesn't exist
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testLeaveRequestNotFound()
     {
@@ -201,13 +201,13 @@ class RestLeavesTest extends TestCase
 
     /**
      * Update a leave request with normal values
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testEditLeaveRequest()
     {
         $response = $this->httpClient->request('POST', 'leaves', 
         [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-07-21",
                   "enddate" => "2018-07-21",
@@ -225,7 +225,7 @@ class RestLeavesTest extends TestCase
 
         $response = $this->httpClient->request('PATCH', 'leaves/' . $leaveId, 
         [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-08-27",
                   "enddate" => "2018-08-28",
@@ -240,7 +240,7 @@ class RestLeavesTest extends TestCase
         $this->assertEquals(200, $response->getStatusCode());
 
         $response = $this->httpClient->request('GET', 'leaves/' . $leaveId,
-         ['auth' => ['bbalet', 'bbalet']]
+         ['auth' => ['bTechnology', 'bTechnology']]
         );
         $this->assertEquals(200, $response->getStatusCode());
         $leave = json_decode($response->getBody(true), true);
@@ -262,14 +262,14 @@ class RestLeavesTest extends TestCase
     /**
      * Tries to create a leave request with invalid data
      * @covers RestLeaves::create
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testCreateLeaveRequestWithIllegalValues()
     {
         $response = $this->httpClient->request('POST', 'leaves', 
         [
             'http_errors' => false,
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-07-21",
                   "enddate" => "invalid",
@@ -287,13 +287,13 @@ class RestLeavesTest extends TestCase
     /**
      * Try to update the leave request of another employee
      * while non admin and non HR
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testIllegalEditLeaveRequest()
     {
         $response = $this->httpClient->request('POST', 'leaves', 
         [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'json' => [
                   "startdate" => "2018-07-21",
                   "enddate" => "2018-07-21",
@@ -329,7 +329,7 @@ class RestLeavesTest extends TestCase
 
     /**
      * Try to update the leave request with invalid data
-     * @author Benjamin BALET <benjamin.balet@gmail.com>
+     * @author Webforx Technology <Webforx.Technology@gmail.com>
      */
     public function testEditLeaveRequestWithIllegalValues()
     {
@@ -377,7 +377,7 @@ class RestLeavesTest extends TestCase
     public function testListOfMyLeaveRequests()
     {
         $response = $this->httpClient->request('GET', 'leaves', [
-            'auth' => ['bbalet', 'bbalet'],
+            'auth' => ['bTechnology', 'bTechnology'],
             'headers' => [
                 'Accept-Language' => 'fr'
             ]

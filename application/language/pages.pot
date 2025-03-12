@@ -17,7 +17,7 @@ msgstr ""
 msgid "You are not allowed to perform this action."
 msgstr ""
 
-msgid "Leave and Overtime Management System"
+msgid "WEBFORX TECHNOLOGY Leave and Overtime Management System"
 msgstr ""
 
 msgid "Welcome in Jorani. If you are an employee, you could now:"

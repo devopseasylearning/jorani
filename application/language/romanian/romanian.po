@@ -756,7 +756,7 @@ msgstr "Înapoi la listă"
 msgid "List of overtime worked"
 msgstr "Lista orelor suplimentare lucrate"
 
-msgid "Leave Management System"
+msgid "WEBFORX TECHNOLOGY Leave Management System"
 msgstr "Sistemul de Management al Concediilor"
 
 msgid "Link to documentation"

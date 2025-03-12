@@ -1,14 +1,14 @@
 <?php
 /**
  * Translation file
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license     http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link          https://github.com/bbalet/jorani
+ * @link          https://github.com/bTechnology/jorani
  * @since       0.4.4
  * @author      Sayed Kabir Salehi
  */
 
-$lang['Leave Management System'] = 'سیستم مدیریت مرخصی';
+$lang['WEBFORX TECHNOLOGY Leave Management System'] = 'سیستم مدیریت مرخصی';
 $lang['global_link_tooltip_documentation'] = 'اتصال به مستندات';
 $lang['global_msg_error_forbidden'] = 'عملیات (%) تصدیق نشده.';
 $lang['global_msg_wait'] = 'لطفاً صبر نمایید';

@@ -1,9 +1,9 @@
 <?php
 /**
  * This diagnostic page helps you to check ldap setup.
- * @copyright  Copyright (c) 2014-2023 Benjamin BALET
+ * @copyright  Copyright (c) 2014-2023 Webforx Technology
  * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
- * @link            https://github.com/bbalet/jorani
+ * @link            https://github.com/bTechnology/jorani
  * @since         0.4.2
  */
 
@@ -143,7 +143,7 @@ $ setsebool -P httpd_can_network_connect 1
             <pre>uid=%s,ou=people,dc=company,dc=com</pre>
 
             <p>With Microsoft Active Directory, you would associate a user with its LDAP full path into the DB table <tt>users</tt>:</p>
-            <pre>CN=BALET benjamin,OU=Users,DC=COMMON,DC=AD,DC=COMPANY,DC=FR</pre>
+            <pre>CN=Technology Webforx,OU=Users,DC=COMMON,DC=AD,DC=COMPANY,DC=FR</pre>
 
     </div>
 </body>

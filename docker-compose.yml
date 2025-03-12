@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   jorani:
-    build: .
+    image: app
     ports:
       - "80:80"
     environment:
